@@ -13,9 +13,12 @@ export default function Home() {
   const [selectedState, setSelectedState] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
 
-  const [countries, setCountries] = useState<any[]>([]);
-  const [states, setStates] = useState<any[]>([]);
-  const [cities, setCities] = useState<any[]>([]);
+  import type { ICountry, IState, ICity } from "country-state-city";
+
+const [countries, setCountries] = useState<ICountry[]>([]);
+const [states, setStates] = useState<IState[]>([]);
+const [cities, setCities] = useState<ICity[]>([]);
+
 
   const [result, setResult] = useState("");
   const [copied, setCopied] = useState(false);
