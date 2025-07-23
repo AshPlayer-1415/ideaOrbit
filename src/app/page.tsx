@@ -6,6 +6,7 @@ import { FiCopy, FiCheck, FiThumbsUp, FiThumbsDown, FiSave } from "react-icons/f
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import toast, { Toaster } from "react-hot-toast";
+import type { ICountry, IState, ICity } from "country-state-city";
 
 export default function Home() {
   const [idea, setIdea] = useState("");
@@ -13,11 +14,10 @@ export default function Home() {
   const [selectedState, setSelectedState] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
 
-  import type { ICountry, IState, ICity } from "country-state-city";
 
-const [countries, setCountries] = useState<ICountry[]>([]);
-const [states, setStates] = useState<IState[]>([]);
-const [cities, setCities] = useState<ICity[]>([]);
+  const [countries, setCountries] = useState<ICountry[]>([]);
+  const [states, setStates] = useState<IState[]>([]);
+  const [cities, setCities] = useState<ICity[]>([]);
 
 
   const [result, setResult] = useState("");
