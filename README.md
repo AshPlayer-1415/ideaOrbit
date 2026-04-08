@@ -8,3 +8,5 @@ Idea Orbit is a powerful idea management platform designed to help users capture
 - **Location Features**: Utilize location data to enhance your idea management experience.
 
 This platform integrates with Firebase for secure data storage and management, ensuring your ideas are safe and accessible at all times.
+
+***Note: This project is still in development and initial stages*** 
